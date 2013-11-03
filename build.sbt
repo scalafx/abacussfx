@@ -16,11 +16,11 @@ javacOptions ++= Seq("-source", "1.6", "-target", "1.6")
 // append -deprecation to the options passed to the Scala compiler
 scalacOptions += "-deprecation"
 
-libraryDependencies += "org.scalafx" % "scalafx_2.9.3" % "1.0.0-M3"
+libraryDependencies += "org.scalafx" % "scalafx_2.9.3" % "1.0.0-M6"
 
 // set the main class for the main 'run' task
 // change Compile to Test to set it for 'test:run'
-mainClass in (Compile, run) := Some("org.scalafx.abacussfx.Abacus2AddAllBallsAndOnClick")
+//mainClass in (Compile, run) := Some("org.scalafx.abacussfx.Abacus2AddAllBallsAndOnClick")
 
 // set the prompt (for this build) to include the project id.
 shellPrompt in ThisBuild := { state => Project.extract(state).currentRef.project + "> " }

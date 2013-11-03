@@ -24,3 +24,7 @@ build
 .classpath
 .settings
 bin/
+
+# IDEA
+/.idea/
+/.idea_modules/
